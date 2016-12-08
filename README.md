@@ -1,3 +1,3 @@
 # bootstrap-tinymce
 
-![alt text](preview..png "Preview 1")
+![alt text](preview.png "Preview 1")
