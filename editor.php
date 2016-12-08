@@ -57,10 +57,10 @@ function editor_tiny_mce_before_init($settings)
       'title' => 'Alert',
       'icon' => 'bubble',
       'items' => array(
-        array( 'title' => 'Success', 'block' => 'div', 'classes' => 'alert alert-success', 'icon' => 'checkmark' ),
-        array( 'title' => 'Info', 'block' => 'div', 'classes' => 'alert alert-info', 'icon' => 'info' ),
-        array( 'title' => 'Warning', 'block' => 'div', 'classes' => 'alert alert-warning', 'icon' => 'warning' ),
-        array( 'title' => 'Danger', 'block' => 'div', 'classes' => 'alert alert-danger', 'icon' => 'notice' ),
+        array( 'title' => 'Info', 'block' => 'div', 'classes' => 'alert alert-info', 'icon' => 'info', 'wrapper' => true ),
+        array( 'title' => 'Success', 'block' => 'div', 'classes' => 'alert alert-success', 'icon' => 'checkmark', 'wrapper' => true ),
+        array( 'title' => 'Warning', 'block' => 'div', 'classes' => 'alert alert-warning', 'icon' => 'warning', 'wrapper' => true ),
+        array( 'title' => 'Danger', 'block' => 'div', 'classes' => 'alert alert-danger', 'icon' => 'notice', 'wrapper' => true ),
       )
     ),
     array(
@@ -69,6 +69,7 @@ function editor_tiny_mce_before_init($settings)
       'classes' => 'well',
       'wrapper' => true,
       'icon' => 'checkbox',
+      'wrapper' => true
     ),
     array(
       'title' => 'Panel',
@@ -90,8 +91,6 @@ function editor_tiny_mce_before_init($settings)
     array(
       'title' => 'Button',
       'icon' => 'pluscircle',
-      'block' => 'div',
-      'classes' => 'alert alert-success',
       'items' => array(
         array( 'title' => 'Default', 'block' => 'a', 'classes' => 'btn btn-default', 'icon' => '' ),
         array( 'title' => 'Success', 'block' => 'a', 'classes' => 'btn btn-success', 'icon' => 'checkmark' ),
